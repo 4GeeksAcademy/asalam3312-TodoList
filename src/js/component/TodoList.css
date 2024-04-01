@@ -1,0 +1,26 @@
+.deleteButton{
+  color: rgba(238, 49, 15, 0.486);
+}
+#todoList{
+    margin:auto;
+    width: 500px;
+    border: gray;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.smoothed{
+    color: rgba(238, 49, 15, 0.486);
+    font-style: italic;
+    font-size: 10rex;
+}
+body{
+  background-image: url('https://img.freepik.com/foto-gratis/lisa-pared-estuco-blanco_1194-6983.jpg');
+  background-size: 70%;
+}
+#counter{
+  text-align: left;
+  padding: 5px;
+  font-size: 12px;
+}
+.div2{
+  border: rgb(110, 110, 110)
+}
