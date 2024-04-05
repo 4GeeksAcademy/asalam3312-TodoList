@@ -7,6 +7,8 @@ const Home = () => {
 
 	const [item, setItem] = useState('');
 	const [list, setList] = useState([]);
+
+	
 	const [hidden, setHidden] = useState(true);
 	const [counter, setCounter]= useState(0);
 
@@ -50,11 +52,11 @@ const Home = () => {
 									<p>{element}</p>
 									<button className="deleteButton bg-white border-0" onClick={() => removeItem(element, index)}>{hidden ? null : "X"}</button>
 								</div>
-							)//if estado local = index mostrar x
+							)
 						})
 					}
 				</div>
-				<div id="counter" className="bg-white text-secondary">{counter != ''? counter + (' items left'): ''}</div>
+				<div id="counter" className="bg-white text-secondary">{counter != ''? counter + (' users added'): ''}</div>
 			</div>
 		</div>
 	);
