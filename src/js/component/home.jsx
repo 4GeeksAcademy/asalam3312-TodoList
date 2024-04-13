@@ -15,6 +15,8 @@ const Home = () => {
 
 	const saveAndSubmit = (e) => {
 		if (e.key === 'Enter' && item.trim() !== '') {
+			if(item.trim() == ''){
+			}
 			setList([...list, item.trim()]);
 			setItem('');
 			setCounter(counter + 1);
@@ -41,7 +43,7 @@ const Home = () => {
 			<h1 className="smoothed">Todos</h1>
 			<div id="todoList">
 				<div className="input-group" >
-					<input type="text" className="form-control border-bottom rounded-0 border border-light" placeholder="Add item" aria-label="Add item" aria-describedby="button-addon2" value={item} onChange={handlerInput} onKeyPress={saveAndSubmit} />
+					<input type="text" className="form-control border-bottom rounded-0 border border-light" placeholder="Add item and press enter to submit" aria-label="Add item and press enter to submit" aria-describedby="button-addon2" value={item} onChange={handlerInput} onKeyPress={saveAndSubmit} />
 				</div>
 				<div>
 					{
@@ -56,7 +58,7 @@ const Home = () => {
 						})
 					}
 				</div>
-				<div id="counter" className="bg-white text-secondary">{counter != ''? counter + (' users added'): ''}</div>
+				<div id="counter" className="bg-white text-secondary">{counter != ''? counter + (' items left'): ''}</div>
 			</div>
 		</div>
 	);
